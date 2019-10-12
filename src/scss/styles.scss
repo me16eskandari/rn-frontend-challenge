@@ -1,0 +1,136 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: helvetica, arial, sans-serif;
+    font-family: BKoodakBold, wf_segoe-ui_normal, 'Segoe UI', Segoe, 'Segoe WP', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 16px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+html {
+    background: #e9eaed;
+}
+
+body {
+    background-color: #e9eaed;
+    color: #333;
+    font-weight: normal;
+    text-size-adjust: none;
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+
+input[type="text"],
+select {
+    font-size: 1em;
+    height: 2.4em;
+    width: 100%;
+    border: 1px solid #c8c5c5 !important;
+    outline: 0;
+    vertical-align: middle;
+    padding: 2px 7px 0 7px;
+    box-shadow: none !important;
+
+    &:disabled {
+        background-color: #f7f7f7;
+        color: #999;
+    }
+
+    &:focus {
+        border-color: #888585 !important;
+    }
+}
+
+
+span.error-message {
+    color: #ca1515;
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+.button {
+    background-color: #351177;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 2px 7px 0 7px;
+    height: 2.4em;
+
+    &.transparent {
+        background-color: transparent;
+        color: #333;
+    }
+
+    &:disabled {
+        pointer-events: none;
+        background-color: #827d8b;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.loading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+div.form {
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    background-color: #fff;
+    margin: 40px auto;
+    width: 400px;
+    max-width: 100%;
+
+    @media screen and (max-width:400px) {
+        margin: 0;
+    }
+
+
+    .row {
+        padding: 10px 20px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: flex-end;
+
+        .button {
+            flex: 0 1 calc(50% - 10px);
+        }
+    }
+
+}
+
+.done{
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #096838;
+    height: 200px;
+}
